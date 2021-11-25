@@ -14,6 +14,7 @@ class Product(models.Model):
     category = models.ForeignKey(Category, on_delete=models.CASCADE)
     title = models.CharField(max_length=255, default='')
     description = models.TextField(default='')
+    product_img = models.CharField(max_length=255, default='')
     price = models.FloatField(default=0)
     active = models.BooleanField(default=True)
 
